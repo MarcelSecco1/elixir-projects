@@ -1,21 +1,30 @@
 # FizzBuzzElixir
 
-**TODO: Add description**
+**Esse projeto é um clássico exemplo de qualquer linguagem, separei os divisores de 3 e 5.**
 
-## Installation
+## Comandos de instalação
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `fizz_buzz_elixir` to your list of dependencies in `mix.exs`:
+**Pré requisitos:**
+  - Elixir
+  - Erlang
+    
+Para rodar o projeto basta utilizar:
 
 ```elixir
-def deps do
-  [
-    {:fizz_buzz_elixir, "~> 0.1.0"}
-  ]
-end
+iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/fizz_buzz_elixir>.
+Dentro do iex:
+```elixir
+FizzBuzzElixir.build("numbers.txt")
+```
+
+Para rodar os testes, basta executar:
+```elixir
+mix test
+```
+
+Caso queria alterar os números, basta modificar o arquivo **numbers.txt**.
+
+
 
