@@ -1,6 +1,6 @@
 defmodule ElixirMon.Game.Actions do
   alias ElixirMon.Game
-  alias ElixirMon.Game.Actions.Attack
+  alias ElixirMon.Game.Actions.{Attack, Heal}
 
   def fetch_move(move) do
     # info do player |> moves |> find_move(moves, move)
@@ -19,6 +19,13 @@ defmodule ElixirMon.Game.Actions do
     case Game.turn() do
       :player -> Attack.atack_opponent(:computer, move)
       :computer -> Attack.atack_opponent(:player, move)
+    end
+  end
+
+  def heal() do
+    case Game.turn() do
+      :player -> Heal.heal_life(:player)
+      :computer -> Heal.heal_life(:computer)
     end
   end
 end

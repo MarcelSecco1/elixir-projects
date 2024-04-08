@@ -1,7 +1,6 @@
 defmodule ElixirMon.Player do
   @required_keys [:life, :moves, :name]
   @max_life 100
-
   @enforce_keys @required_keys
   defstruct @required_keys
 
