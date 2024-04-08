@@ -6,4 +6,8 @@ defmodule ElixirMon.Game.Status do
     IO.inspect(Game.info())
     IO.puts("\n===================================\n")
   end
+
+  def print_error_move_message(move) do
+    IO.puts("\n========= Movimento inválido: #{move}!! =========\n")
+  end
 end
