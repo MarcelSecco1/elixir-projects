@@ -109,7 +109,6 @@ defmodule ElixirMon.GameTest do
       Game.start(computer, player)
 
       assert Game.turn() == :player
-
     end
   end
 
